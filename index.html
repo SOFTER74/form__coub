@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container__form">
+    <h2>login</h2>
+    <form>
+
+        <div class="form__field">
+            <input type="email" name="name" class="email" placeholder="E-Mail" />
+            <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+        </div>
+        <input type="password" class="pwd" placeholder="password" >
+        <div class="select">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head">Выберите</div>
+            <ul class="select__list" style="display: none;">
+                <li class="select__item">Стилизация select CSS</li>
+                <li class="select__item">Стилизация select JavaScript</li>
+                <li class="select__item">Стилизация select, используя input</li>
+            </ul>
+        </div>
+    </form>
+    <div class="tabs">
+        <div id="content-1">
+           So few...
+        </div>
+        <div id="content-2">
+            More...
+        </div>
+        <div id="content-3">
+            Done!
+        </div>
+
+        <div class="tabs__links">
+            <a href="#content-1">Junior</a>
+            <a href="#content-2">Middle</a>
+            <a href="#content-3">Senior</a>
+        </div>
+    </div>
+    <div class="button__test button b2">
+        <div class="button__left">TEST</div>
+        <input type="checkbox" class="checkbox">
+        <div class="knobs">
+            <span></span>
+        </div>
+        <div class="layer"></div>
+        <div class="button__right">TEST</div>
+    </div>
+    <div class="example-2">
+        <div class="form-group">
+            <input type="file" name="file" id="file" class="input-file">
+            <label for="file" class="btn btn-tertiary js-labelFile">
+                <i class="icon fa fa-check"></i>
+                <span class="js-fileName">Загрузить файл</span>
+            </label>
+        </div>
+    </div>
+    <a href="#" class="form__link">
+        forgot your password ?
+    </a>
+    <div class="bottom__form">
+        <div class="register__btn">
+            <span>register</span>
+        </div>
+        <div class="sign__btn">
+            <span>sign in</span>
+        </div>
+    </div>
+</div>
+<script src="/dist/app.js"></script>
+</body>
+</html>
